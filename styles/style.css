@@ -2,48 +2,60 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 24px 96px 24px;
+    justify-content: space-between;
+    padding: 92px 50px 96px 50px;
+    height: 293px;                  /*  удалить потом */
 }
 
 .header__links-list {
     display: flex;
     list-style-type: circle;
-    gap: 50px;                          /* выровнять */
+    column-gap: 32px;
+}
+
+.header__links-list-item {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .header__links-list-item_no-bullit {
     list-style-type: none;
-    text-decoration: none;          /* не работает почему-то */
 }
 
-.header__links-list-item{
-    font-family: Raleway;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 0%;
+.header__menu-link_active {
+    text-decoration: none;
+}
+
+.header__links-list-item a {
+    text-underline-offset: 4px;
 }
 
 .header__logo {
-    display: block; 
-    min-width: 148px;
+    width: 139px;       /* если размер не задавать, то изображение вообще не появляется */
+    display: block;
 }
 
 .address {
-
+    max-width: 240px;
+    justify-self: end;
+    font-style: normal;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
 }
 
-.header__address {
-    max-width: 240.52px;
-    justify-self: end;
+.address a {
+    text-underline-offset: 4px;
 }
 
 .cover {
     position: relative;
-    min-height: 757px;                  /* удалить потом */
+    height: 757px;                  /* удалить потом */
+    display: flex;
+    flex-direction: column;
     background-image: url(../images/cover.jpg);
     background-size: cover;
-    display: grid
 }
 
 .overlay {
@@ -52,61 +64,71 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0 0 0 / 0.6);
+    background-color: rgb(0 0 0 / 0.5);
 }
 
 .cover__title {
-    padding: 165px 50px 237px 50px;
+    padding-top: 165px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    row-gap: 19px;
     font-family: Raleway;
     font-size: 100px;
+    font-weight: 700;
+    letter-spacing: 30px;
     text-transform: uppercase;
-    color: white;
+    color: grey;
     z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "aligned-text . ."
-    ". aligned-text_center ."
-    ". . aligned-text_right";
-}
-
-.aligned-text {
-   grid-area: aligned-text;
+    width: 1100px;
 }
 
 .aligned-text_center {
-    grid-area: aligned-text_center;
+    text-align: center;
+    margin-right: -30px;
 }
 
 .aligned-text_right {
-    grid-area: aligned-text_right;
+    text-align: right;
+    margin-right: -30px;
 }
 
 .cover__description {
+    margin-top: 103px;
+    padding-left: 50px;
+    padding-right: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     font-family: Raleway;
     font-size: 22px;
     font-weight: 400;
+    line-height: 28px;
     text-transform: uppercase;
 }
 
 .cover__description-text {
     z-index: 1;
-    word-spacing: 10px;
+    word-spacing: 19px;
     background-color: transparent;
     color: white;
 }
 
 .bet-button {
+    width: 256px;
+    height: 51px;
     z-index: 1;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
     background-color: transparent;
     color: white;
+    border: 1px solid;
 }
 
 .lots {
-    padding-top: 179px;
+    padding-top: 180px;
 }
 
 .lots__heading {
@@ -224,7 +246,6 @@
     font-weight: 700;
     text-transform: uppercase;
     padding-top: 136px;
-    background: yellow;
 }
 
 .about_text_margin {
@@ -239,10 +260,9 @@
 }
 
 .footer {
-    background: yellowgreen;
     margin: 180px 50px 88px 50px;
     display: grid;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(3, 1fr);
   }
 
 .footer__menu-list-item {
@@ -250,8 +270,8 @@
     text-align: center;
 }
 
-.footer__menu-link{
-
+.footer__menu-list-item a {
+    text-underline-offset: 4px;
 }
 
 .footer__menu-link_active {
@@ -267,3 +287,14 @@
 .footer__social-list-item {
     list-style-type: none;
 }
+
+
+/* .pixel-perfect-image {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+      filter: sepia(0.6);
+  }
+    */

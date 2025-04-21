@@ -13,31 +13,31 @@
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li class="header__links-list-item_no-bullit header__links-list-item">
-            <a href="">главная</a>
+          <li class=" header__links-list-item header__links-list-item_no-bullit">
+            <a href="#link_to_main_content" class="header__menu-link_active">главная</a>
           </li>
           <li class="header__links-list-item">
-            <a href="">посмотреть лоты</a>
+            <a href="#link_to_lots">посмотреть лоты</a>
           </li>
           <li class="header__links-list-item">
-            <a href="">об аукционе</a>
+            <a href="#link_to_about">об аукционе</a>
           </li>
         </ul>
       </nav>
       <a class="header__logo">
         <img src="images/logo-black.svg" alt="логотип аукциона"/>
       </a>
-      <address class="address header__address">
+      <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a><br>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-<br>265, Амстердам</p>
       </address>
     </header>
     <main>
-      <section class="cover">
+      <section class="cover" id="link_to_main_content">
         <div class="overlay"></div>
         <h1 class="cover__title">
-          <span class="aligned-text">оно</span><br>
+          <span class="aligned-text">оно</span>
           <span class="aligned-text_center">тебе</span>
           <span class="aligned-text_right">надо</span>
         </h1>
@@ -46,12 +46,12 @@
           <button class="bet-button">Сделать ставку</button>
         </div>
       </section>
-      <section class="lots">
+      <section class="lots" id="link_to_lots">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <div class="overlay"></div>
-            <a class="card-link">
+            <a class="card-link" href="">
               <article class="card card_type_film">
                 <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
                 <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
@@ -80,7 +80,7 @@
          <a class="lots__look-more-link">посмотреть больше
          </a>
       </section>
-      <section class="about">
+      <section class="about" id="link_to_about">
         <div class="about__column about__logo">
           <img src="/images/logo-white.svg" class="about__logo-image">
         </div>
@@ -104,35 +104,36 @@
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-list-item">
-            <a class="footer__menu-link footer__menu-link_active" href="">главная</a>
+            <a class="footer__menu-link_active" href="#link_to_main_content">главная</a>
           </li>
           <li class="footer__menu-list-item">
-            <a class="footer__menu-link" href="">посмотреть лоты</a>
+            <a href="#link_to_lots">посмотреть лоты</a>
           </li>
           <li class="footer__menu-list-item">
-            <a class="footer__menu-link" href="">об аукционе</a>
+            <a href="#link_to_about">об аукционе</a>
           </li>
         </ul>
       </nav>
       <aside class="footer__social-list">
         <ul class="footer__social-list">
           <li class="footer__social-list-item">
-            <a>
+            <a href="https://www.youtube.com/" target="_blank">
               <img src="/images/yt.svg">
             </a>
           </li>
           <li class="footer__social-list-item">
-            <a>
+            <a href="https://vk.com/" target="_blank">
               <img src="/images/vk.svg">
             </a>
           </li>
           <li class="footer__social-list-item">
-            <a>
+            <a href="https://ru.pinterest.com/" target="_blank">
               <img src="/images/pinterest.svg">
             </a>
           </li>
         </ul>
       </aside>
     </footer>
+    <!-- <img src="/images/Example.png" class="pixel-perfect-image"> -->
   </body>
 </html>
