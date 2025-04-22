@@ -84,11 +84,12 @@
     padding-left: 50px;
     padding-right: 50px;
     display: grid;
-    row-gap: 19px;
+    row-gap: 20px;
     font-family: Raleway;
     font-size: 100px;
     font-weight: 700;
     letter-spacing: 30px;
+    line-height: 115px;
     text-transform: uppercase;
     color: white;
     z-index: 1;
@@ -106,7 +107,7 @@
 }
 
 .cover__description {
-    margin-top: 103px;
+    margin-top: 105px;
     padding-left: 50px;
     padding-right: 50px;
     display: flex;
@@ -140,32 +141,32 @@
 }
 
 .lots {
-    padding-top: 180px;
+    margin-top: 180px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 120px;
 }
 
 .lots__heading {
     padding-left: 40px;
-    padding-bottom: 27px;
     font-family: Raleway;
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
-    line-height: 100%;
-
-}
+    }
 
 .lots__card-list {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 24px;
     gap: 25px;
+    padding-top: 27px;
     list-style-type: none;
     color: white;
 }
 
 .lots__card-list-item {
     width: 334px;
-    min-height: 563px;
+    min-height: 596px;
     position: relative;
 }
 
@@ -173,7 +174,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 51px 40px 48px 40px;
+    padding: 48px 40px;
 }
 
 .card__title {
@@ -181,7 +182,7 @@
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
-    text-decoration: underline;
+    text-underline-offset: 4px;
     z-index: 1;
 }
 
@@ -189,11 +190,14 @@
     font-family: Raleway;
     font-size: 20px;
     font-weight: 400;
+    line-height: 120%;
+    
     z-index: 1;
 }
 
 .card-link {
     height: 100%;
+    text-decoration: none;
 }
 
 .card_type_film {
@@ -219,11 +223,13 @@
 }
 
 .lots__look-more-link {
+    display: block;
     padding-left: 40px;
-    padding-top: 30px;          
+    padding-top: 30px;         
     font-family: Raleway;
     font-size: 20px;
     font-weight: 400;
+    text-underline-offset: 4px;
 }
 
 .about {
