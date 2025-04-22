@@ -2,21 +2,30 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    justify-content: space-between;
     padding: 92px 50px 96px 50px;
-    height: 293px;                  /*  удалить потом */
+    margin-top: 6px;
+                
+}
+
+.header__logo {
+    width: 148px;
+}
+
+.header__logo-image {
+    display: block;
 }
 
 .header__links-list {
     display: flex;
     list-style-type: circle;
-    column-gap: 32px;
+    column-gap: 33px;
 }
 
 .header__links-list-item {
     font-family: Raleway;
     font-size: 18px;
     font-weight: 400;
+    line-height: 100%;
 }
 
 .header__links-list-item_no-bullit {
@@ -31,18 +40,18 @@
     text-underline-offset: 4px;
 }
 
-.header__logo {
-    width: 139px;       /* если размер не задавать, то изображение вообще не появляется */
-    display: block;
-}
 
 .address {
     max-width: 240px;
     justify-self: end;
     font-style: normal;
+    text-decoration: none;
+    text-transform: none;
     font-family: Raleway;
     font-size: 18px;
     font-weight: 400;
+    line-height: 24px;
+    margin-right: 35px;
 }
 
 .address a {
@@ -51,7 +60,7 @@
 
 .cover {
     position: relative;
-    height: 757px;                  /* удалить потом */
+    height: 757px;                  
     display: flex;
     flex-direction: column;
     background-image: url(../images/cover.jpg);
@@ -208,7 +217,7 @@
 
 .lots__look-more-link {
     padding-left: 40px;
-    padding-top: 30px;          /* не работает почему-то */
+    padding-top: 30px;          
     font-family: Raleway;
     font-size: 20px;
     font-weight: 400;
@@ -287,6 +296,8 @@
 .footer__social-list-item {
     list-style-type: none;
 }
+
+
 
 
 /* .pixel-perfect-image {
