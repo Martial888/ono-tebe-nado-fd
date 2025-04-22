@@ -41,6 +41,7 @@
 
 .address {
     max-width: 240px;
+    width: 100%;
     justify-self: end;
     font-style: normal;
     text-decoration: none;
@@ -49,7 +50,6 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 24.3px;
-    margin-right: 35px;
 }
 
 .address a {
@@ -287,13 +287,27 @@
 }
 
 .footer {
-    margin: 180px 50px 88px 50px;
+    margin-top: 180px;
+    margin-left: 50px;
+    margin-right: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center; 
   }
+
+.footer__address {
+    justify-self: start;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+}
 
 .footer__menu-list-item {
     list-style-type: none;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -309,6 +323,7 @@
     display: flex;
     width: 240px;
     gap: 48px;
+    justify-self: end;
 }
 
 .footer__social-list-item {
