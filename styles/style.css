@@ -62,7 +62,7 @@
 
 .cover {
     position: relative;
-    height: 757px;                  
+    height: 757px;
     display: flex;
     flex-direction: column;
     background-image: url(../images/cover.jpg);
@@ -131,10 +131,14 @@
     width: 256px;
     height: 51px;
     z-index: 1;
+    padding-top: 12px;
+    padding-bottom: 31px;
     font-family: Raleway;
     font-size: 22px;
     font-weight: 500;
+    text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
     background-color: transparent;
     color: white;
     border: 1px solid;
@@ -212,8 +216,7 @@
     height: 100%;
     background-image: url(../images/card-lot-02.jpg);
     background-position: center;
-    background-size: cover;
-    
+    background-size: cover;   
 }
 
 .card_type_picture {
@@ -226,7 +229,7 @@
 .lots__look-more-link {
     display: block;
     padding-left: 40px;
-    padding-top: 30px;         
+    padding-top: 30px;
     font-family: Raleway;
     font-size: 20px;
     font-weight: 400;
@@ -293,7 +296,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center; 
-  }
+}
 
 .footer__address {
     justify-self: start;
@@ -319,7 +322,7 @@
     text-decoration: none;
 }
 
-.footer__social-list{
+.footer__social-list {
     display: flex;
     width: 240px;
     gap: 48px;
