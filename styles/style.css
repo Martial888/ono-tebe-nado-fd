@@ -6,11 +6,11 @@
 }
 
 .header__logo {
-    width: 148px;
+  width: 148px;
 }
 
 .header__logo-image {
-    display: block;
+  display: block;
 }
 
 .header__links-list {
@@ -52,7 +52,7 @@
 }
 
 .address a {
-    text-underline-offset: 4px;
+  text-underline-offset: 4px;
 }
 
 .cover {
@@ -205,7 +205,6 @@
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-
 }
 
 .card_type_book {
@@ -255,6 +254,7 @@
 
 .about__title {
   padding-top: 3px;
+  margin-bottom: 100px;
   font-family: Raleway, sans-serif;
   font-size: 40px;
   font-weight: 700;
@@ -262,16 +262,17 @@
 }
 
 .about__text {
-    font-family: Raleway, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 120%;
+  max-width: 688px;
+  width: 100%;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 24px;
 }
 
-.about__text-with-paddings {
-  padding-top: 100px;
-  padding-right: 5px;
-  padding-bottom: 24px;
+.about__text:last-child {
+  margin-bottom: 0; /*  возможно перемудрил и у последнего абзаца также можно было оставить марджин, но уменьшить отступ всего футера */
 }
 
 .footer {
@@ -318,7 +319,6 @@
   list-style-type: none;
   width: 48px;
   height: 48px;
-
 }
 
 /* .pixel-perfect-image {
